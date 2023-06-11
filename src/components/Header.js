@@ -25,7 +25,7 @@ function Header() {
         return <About />;
     }
   };
-
+  
   return (
     <div>
       <nav className="navbar">
