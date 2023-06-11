@@ -5,7 +5,7 @@ import Header from './components/Header';
 // import Contact from './components/pages/Contact';
 import Footer from './components/Footer';
 import Navigation from './components/Navigation';
-// import Project from './components/pages/Project';
+// import Projects from './components/pages/Projects';
 // import Resume from './components/pages/Resume';
 import 'bootstrap/dist/css/bootstrap.min.css';
 

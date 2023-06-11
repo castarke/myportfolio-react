@@ -1,13 +1,13 @@
 import React from "react";
 
-function Project() {
+function Projects() {
     return (
         <div>
             <p>
-              Project
+              Projects
             </p>
         </div>
     )
 }
 
-export default Project;
+export default Projects;
