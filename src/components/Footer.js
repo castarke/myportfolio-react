@@ -15,6 +15,11 @@ const Footer = () => {
               <i className="fab fa-linkedin mr-1"></i> LinkedIn
             </a>
           </li>
+          <li className="list-inline-item">
+            <a className="text-light" href="https://www.instagram.com/castarke/">
+              <i className="fab fa-instagram mr-1"></i>Instagram
+            </a>
+          </li>
         </ul>
       </div>
     </footer>
