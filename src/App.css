@@ -68,6 +68,7 @@ span.content.is-large {
   color: whitesmoke !important;
   text-decoration: underline;
   text-decoration-color: whitesmoke;
+  size-adjust: 55px !important;
 }
 
 h2 {
@@ -107,7 +108,7 @@ margin-bottom: 35px;
 
 .contact-form {
   margin-top: 75px;
-  max-width: 1400px; /* Adjust this value as per your desired width */
+  max-width: 1400px; 
   width: 100%;
 }
 .projectImg {

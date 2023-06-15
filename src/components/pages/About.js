@@ -1,11 +1,14 @@
+// importing react
 import React from 'react';
-
+// creating and exporting About function
 export default function About() {
   return (
     <div style={{ textAlign: 'center', marginTop: '25px', marginBottom: '75px' }}>
+      {/* using profile pic from public folder */}
       <img src="/assets/1570744259165.jpeg" alt="My Image" style={{ display: 'block', margin: '0 auto', borderRadius:'50%', overflow:'hidden',boxShadow: '0 0 550px rgba(255, 215, 0, 0.3)'}} />
       <h1 style={{ marginTop: '25px' }}>About Me!</h1>
       <div style={{ margin: '0 20px' }}>
+        {/* breakinng up the paragraph for visual reasons */}
         <p className='about'>
           Hello there! I'm a passionate junior programmer who is currently honing my skills through the Georgia Tech Full Stack bootcamp. The ever-evolving tech world has captivated me, and I find great joy in exploring new facets of this exciting industry and mastering the art of coding.
         </p>

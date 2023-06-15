@@ -1,6 +1,8 @@
+// importing react and listgroup from bootstrap for styling
 import React from 'react';
 import ListGroup from 'react-bootstrap/ListGroup';
 
+// adding in proficiencies
 function Resume() {
   const proficiencies = [
     'React',
@@ -28,6 +30,7 @@ function Resume() {
         ))}
       </ListGroup>
       <div style={{marginBottom: '55px' }}>
+        {/* creating a downloadable link for my resume */}
         <a href='/assets/Candler Starke Resume.pdf' className='resume' style={{ display: 'block', textAlign: 'center' }} download>
           Click to download resume
         </a>
