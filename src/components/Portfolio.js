@@ -5,9 +5,8 @@ const projects = [
     {
         id: 0,
         title: "Note Taker",
-        // languages: "react, jsx, css, js",
         image: "/assets/231067061-996b496e-051b-4083-8440-7e6aae3bfef6.png",
-        description: "You have the ability to use this notepad to create notes and delete notes, to help keep your life in check ",
+        description: "Add and delete notes to help keep track of your life! ",
         repository: "https://github.com/castarke/Express-Note-Taker",
         live: "https://candlers-note-taker.herokuapp.com/notes",
       },
@@ -31,7 +30,7 @@ const projects = [
         id:3,
         title:"Who, Where ,Wow",
         image:"/assets/Who,Where,Wow.png",
-        description:"An application where you can get the filmography of any actor and what streaming service the movie is on",
+        description:"Where to watch your favorite actor's filmography",
         repository:"https://github.com/castarke/movie-rec-repo",
         live:"https://castarke.github.io/movie-rec-repo/",
       },
@@ -56,7 +55,7 @@ const projects = [
 function Portfolio() {
     return (
         <div>
-            <h1>Candler's Portfolio</h1>
+            <h1 className="projectHeader">Candler's Portfolio</h1>
 
             <Projects projects = {projects}/>
         </div>

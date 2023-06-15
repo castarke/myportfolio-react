@@ -4,7 +4,7 @@ function Resume() {
     return (
         <div>
             <h2>Proficiencies</h2>
-            <ul>
+            <ul className="proList">
                 <li>React</li>
                 <li>CSS</li>
                 <li>JavaScript</li>
