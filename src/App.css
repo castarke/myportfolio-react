@@ -1,5 +1,21 @@
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
 .App {
   text-align: center;
+  flex: 1 0 auto;
 }
 
 .App-logo {
@@ -25,7 +41,72 @@
 }
 
 .App-link {
-  color: #61dafb;
+  color: white;
+}
+
+.nav-tabs .nav-link {
+  color: white;
+  cursor: pointer;
+  font-weight: normal;
+}
+
+.nav-tabs .nav-link:hover {
+  font-weight: bold;
+  color: white;
+  transition: 1s;
+}
+
+p {
+  color: whitesmoke;
+}
+
+h1 {
+  color: whitesmoke !important;
+}
+
+span.content.is-large {
+  color: whitesmoke !important;
+  text-decoration: underline;
+  text-decoration-color: whitesmoke;
+}
+
+h2 {
+  color: whitesmoke !important;
+}
+
+li {
+  color: whitesmoke !important;
+}
+
+.resume {
+  color: whitesmoke !important;
+}
+
+footer {
+  text-align: center;
+}
+
+img.profilePic {
+  display: block;
+  margin: 25px auto 75px;
+}
+
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.title-container {
+  margin-bottom: 20px;
+}
+
+.contact-form {
+  margin-top: 75px;
+  max-width: 1400px; /* Adjust this value as per your desired width */
+  width: 100%;
 }
 
 @keyframes App-logo-spin {
@@ -35,4 +116,71 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.bg {
+  background: url(https://i.ibb.co/87GbbFP/2799006.jpg) no-repeat;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -3;
+}
+
+.bg:before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: #000;
+  position: fixed;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  opacity: 0.3;
+}
+
+@keyframes sf-fly-by-1 {
+  from {
+    transform: translateZ(-600px);
+    opacity: 0.5;
+  }
+  to {
+    transform: translateZ(0);
+    opacity: 0.5;
+  }
+}
+
+@keyframes sf-fly-by-2 {
+  from {
+    transform: translateZ(-1200px);
+    opacity: 0.5;
+  }
+  to {
+    transform: translateZ(-600px);
+    opacity: 0.5;
+  }
+}
+
+@keyframes sf-fly-by-3 {
+  from {
+    transform: translateZ(-1800px);
+    opacity: 0.5;
+  }
+  to {
+    transform: translateZ(-1200px);
+    opacity: 0.5;
+  }
+}
+
+.star-field {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  perspective: 600px;
+  -webkit-perspective: 600px;
+  z-index: -1;
 }

@@ -13,7 +13,7 @@ function Resume() {
                 <li>Managment</li>
                 <li>Accounting</li>
             </ul>
-            <a href="/assets/Candler Starke Resume.pdf" download>Click to download resume</a>
+            <a href="/assets/Candler Starke Resume.pdf" className="resume" download>Click to download resume</a>
         </div>
     )
 }

@@ -12,8 +12,12 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 const App = () => {
   return (
   <div>
+    <div>
     <Header />
+    </div>
+    <footer>
     <Footer />
+    </footer>
   </div>
 )
 }

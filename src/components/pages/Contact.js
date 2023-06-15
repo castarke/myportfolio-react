@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { validateEmail } from "../../utils/helpers";
-// import './style.css'
+import Form from 'react-bootstrap/Form';
+import Button from 'react-bootstrap/Button';
 
 function Contact() {
   const [firstName, setFirstName] = useState('');
@@ -50,51 +51,69 @@ function Contact() {
   };
 
   return (
-    <div>
-      <p>If you wish to contact me, please fill out this form and I will reach back out as soon as possible!</p>
-      <form className="contactForm">
-        <input
-          value={firstName}
-          name="firstName"
-          onChange={handleInputChange}
-          type="text"
-          placeholder="First Name"
-        />
-        {formErrors.firstName && (
-          <p className="error-text">{formErrors.firstName}</p>
-        )}
-        <input
-          value={lastName}
-          name="lastName"
-          onChange={handleInputChange}
-          type="text"
-          placeholder="Last Name"
-        />
-        {formErrors.lastName && (
-          <p className="error-text">{formErrors.lastName}</p>
-        )}
-        <input
-          value={email}
-          name="email"
-          onChange={handleInputChange}
-          type="email"
-          placeholder="email"
-        />
-        {formErrors.email && (
-          <p className="error-text">{formErrors.email}</p>
-        )}
-        <input
-          value={textBody}
-          name="textBody"
-          onChange={handleInputChange}
-          type="text"
-          placeholder="Please write your message here"
-        />
-        {formErrors.textBody && (
-          <p className="error-text">{formErrors.textBody}</p>
-        )}
-        <button type="button" onClick={handleFormSubmit}>Submit</button>
-      </form>
+    <div className="contact-container">
+      <div className="title-container">
+        <h1>If you wish to contact me, please fill out this form and I will reach back out as soon as possible!</h1>
+      </div>
+      <div className="form-container">
+        <Form className="contact-form">
+          <Form.Group className="mb-3" controlId="formBasicFirstName">
+            <Form.Control
+              value={firstName}
+              name="firstName"
+              onChange={handleInputChange}
+              type="text"
+              placeholder="First Name"
+            />
+            {formErrors.firstName && (
+              <p className="error-text">{formErrors.firstName}</p>
+            )}
+          </Form.Group>
+
+          <Form.Group className="mb-3" controlId="formBasicLastName">
+            <Form.Control
+              value={lastName}
+              name="lastName"
+              onChange={handleInputChange}
+              type="text"
+              placeholder="Last Name"
+            />
+            {formErrors.lastName && (
+              <p className="error-text">{formErrors.lastName}</p>
+            )}
+          </Form.Group>
+
+          <Form.Group className="mb-3" controlId="formBasicEmail">
+            <Form.Control
+              value={email}
+              name="email"
+              onChange={handleInputChange}
+              type="email"
+              placeholder="Email"
+            />
+            {formErrors.email && (
+              <p className="error-text">{formErrors.email}</p>
+            )}
+          </Form.Group>
+
+          <Form.Group className="mb-" controlId="formBasicTextBody">
+            <Form.Control
+              value={textBody}
+              name="textBody"
+              onChange={handleInputChange}
+              as="textarea"
+              placeholder="Please write your message here"
+            />
+            {formErrors.textBody && (
+              <p className="error-text">{formErrors.textBody}</p>
+            )}
+          </Form.Group>
+
+          <Button variant="primary" type="submit" onClick={handleFormSubmit}>
+            Submit
+          </Button>
+        </Form>
+      </div>
     </div>
   );
 }

@@ -1,47 +1,30 @@
 import React from "react";
 
-function Project(props) {
+function Projects(props) {
+  if (!props.projects) {
+    return null;
+  }
+
   return (
     <div>
-      <div className="columns is-desktop is-justify-content-center is-flex-wrap-wrap is-flex-direction-row">
+      <div className="row row-cols-1 row-cols-md-2 g-4">
         {props.projects.map((project) => (
-          <div className="column is-half" key={project.id}>
+          <div className="col" key={project.id}>
             <div className="card">
-              <div className="card-image">
-                <figure className="image is-4by3">
+              <figure className="figure">
+                <div className="ratio ratio-4x3">
                   <a href={project.live} target="_blank" rel="noreferrer">
-                    <img src={process.env.PUBLIC_URL + project.image} alt="Placeholder image" />
+                    <img src={project.image} className="figure-img img-fluid" alt="Placeholder image" />
                   </a>
-                </figure>
+                </div>
+              </figure>
+              <div className="card-body">
+                <h5 className="card-title">{project.title}</h5>
+                <p className="card-text">{project.description}</p>
               </div>
-              <div className="card-content">
-                <div className="media">
-                  <div className="media-left"></div>
-                  <div className="media-content">
-                    <p className="title is-4">
-                      {project.title}
-                    </p>
-                  </div>
-                </div>
-                <div className="card">
-                  <footer className="card-footer">
-                    <a
-                      href={project.repo}
-                      className="card-footer-item"
-                      target="_blank" rel="noreferrer"
-                    >
-                      See the Repo!
-                    </a>
-                    <br />
-                    <a
-                      href={project.live}
-                      className="card-footer-item"
-                      target="_blank" rel="noreferrer"
-                    >
-                      See the Live Site!
-                    </a>
-                  </footer>
-                </div>
+              <div className="card-footer">
+                <a href={project.repository} className="card-link" target="_blank" rel="noreferrer">See the repository!</a>
+                <a href={project.live} className="card-link" target="_blank" rel="noreferrer">See the Live Site!</a>
               </div>
             </div>
           </div>
@@ -51,4 +34,4 @@ function Project(props) {
   );
 }
 
-export default Project;
+export default Projects;

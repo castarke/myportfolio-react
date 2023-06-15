@@ -2,7 +2,7 @@ import React from 'react';
 
 const Footer = () => {
   return (
-    <footer className="bg-dark text-light text-center py-3">
+    <footer style={{ position: 'fixed', bottom: 0, width: '100%', background: '#343a40', color: '#fff', padding: '1rem 0' }}>
       <div className="container">
         <ul className="list-inline mb-0">
           <li className="list-inline-item">
