@@ -51,11 +51,11 @@ function Contact() {
   };
 
   return (
-    <div className="contact-container">
+    <div className="contact-container" style={{ textAlign: 'center', marginBottom: '75px' }}>
       <div className="title-container">
-        <h1>If you wish to contact me, please fill out this form and I will reach back out as soon as possible!</h1>
+        <h1 style={{ fontSize: '24px', marginBottom: '20px' }}>If you wish to contact me, please fill out this form and I will reach back out as soon as possible!</h1>
       </div>
-      <div className="form-container">
+      <div className="form-container" style={{ maxWidth: '800px', margin: '0 auto' }}>
         <Form className="contact-form">
           <Form.Group className="mb-3" controlId="formBasicFirstName">
             <Form.Control
@@ -64,9 +64,10 @@ function Contact() {
               onChange={handleInputChange}
               type="text"
               placeholder="First Name"
+              style={{ borderRadius: '8px' }}
             />
             {formErrors.firstName && (
-              <p className="error-text">{formErrors.firstName}</p>
+              <p className="error-text" style={{ color: 'red' }}>{formErrors.firstName}</p>
             )}
           </Form.Group>
 
@@ -77,9 +78,10 @@ function Contact() {
               onChange={handleInputChange}
               type="text"
               placeholder="Last Name"
+              style={{ borderRadius: '8px' }}
             />
             {formErrors.lastName && (
-              <p className="error-text">{formErrors.lastName}</p>
+              <p className="error-text" style={{ color: 'red' }}>{formErrors.lastName}</p>
             )}
           </Form.Group>
 
@@ -90,9 +92,10 @@ function Contact() {
               onChange={handleInputChange}
               type="email"
               placeholder="Email"
+              style={{ borderRadius: '8px' }}
             />
             {formErrors.email && (
-              <p className="error-text">{formErrors.email}</p>
+              <p className="error-text" style={{ color: 'red' }}>{formErrors.email}</p>
             )}
           </Form.Group>
 
@@ -103,13 +106,14 @@ function Contact() {
               onChange={handleInputChange}
               as="textarea"
               placeholder="Please write your message here"
+              style={{ width: '100%', borderRadius: '8px' }}
             />
             {formErrors.textBody && (
-              <p className="error-text">{formErrors.textBody}</p>
+              <p className="error-text" style={{ color: 'red' }}>{formErrors.textBody}</p>
             )}
           </Form.Group>
 
-          <Button variant="primary" type="submit" onClick={handleFormSubmit}>
+          <Button variant="primary" type="submit" onClick={handleFormSubmit} style={{ borderRadius: '8px' }}>
             Submit
           </Button>
         </Form>

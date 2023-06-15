@@ -7,11 +7,11 @@ function Project(props) {
   }
 
   return (
-    <div className="row row-cols-1 row-cols-md-2 row-cols-md-3 g-4">
+    <div className="row row-cols-3 row-cols-md-3 row-cols-md-3 g-4">
       {props.projects.map((project) => (
         <div className="col" key={project.id}>
-          <Card style={{marginBottom:'55px'}}>
-            <Card.Img variant="top" src={project.image} alt="Project image" className="projectImg"/>
+          <Card style={{ marginBottom: '55px' }}>
+            <Card.Img variant="top" src={project.image} alt="Project image" className="projectImg" style={{ maxHeight: '200px', objectFit: 'cover' }} />
             <Card.Body>
               <Card.Title>{project.title}</Card.Title>
               <Card.Text>{project.description}</Card.Text>

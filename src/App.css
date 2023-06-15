@@ -93,14 +93,13 @@ img.profilePic {
   overflow: hidden !important; 
 }
 
-
-.contact-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
+button.btn.btn-primary {
+  margin-top: 15px;
 }
+.contact-container {
+margin-top: 35px;
+margin-bottom: 35px;
+} 
 
 .title-container {
   margin-bottom: 20px;
