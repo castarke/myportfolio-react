@@ -89,7 +89,10 @@ footer {
 img.profilePic {
   display: block;
   margin: 25px auto 75px;
+  border-radius: 50% !important; 
+  overflow: hidden !important; 
 }
+
 
 .contact-container {
   display: flex;
