@@ -6,7 +6,7 @@ const projects = [
   {
     id: 0,
     title: 'Note Taker',
-    image: '/assets/notetaker.png',
+    image: 'assets/notetaker.png',
     description: 'Add and delete notes to help keep track of your life',
     repository: 'https://github.com/castarke/Express-Note-Taker',
     live: 'https://candlers-note-taker.herokuapp.com/notes',
@@ -14,7 +14,7 @@ const projects = [
   {
     id: 1,
     title: 'CMS-Blog',
-    image: '/assets/candlerscmsblog.png',
+    image: 'assets/candlerscmsblog.png',
     description: 'A blog where you can share your thoughts with friends',
     repository: 'https://github.com/castarke/CMS-Blog',
     live: 'https://candlerscmsblog.herokuapp.com/',
@@ -30,7 +30,7 @@ const projects = [
   {
     id: 3,
     title: 'Who, Where, Wow',
-    image: '/assets/whowherewow.png',
+    image: 'assets/whowherewow.png',
     description: "Where to watch your favorite actor's filmography",
     repository: 'https://github.com/castarke/movie-rec-repo',
     live: 'https://castarke.github.io/movie-rec-repo/',
@@ -38,7 +38,7 @@ const projects = [
   {
     id: 4,
     title: 'Weather Dashboard',
-    image: '/assets/weatherdashboard.png',
+    image: 'assets/weatherdashboard.png',
     description: 'Get your local weather forecast',
     repository: 'https://github.com/castarke/Weather-Forcast',
     live: 'https://castarke.github.io/Weather-Forcast/',
@@ -46,7 +46,7 @@ const projects = [
   {
     id: 5,
     title: 'Workday Planner',
-    image: '/assets/workdayscheduler.png',
+    image: 'assets/workdayscheduler.png',
     description: 'A Calendar to keep track of your daily tasks',
     repository: 'https://github.com/castarke/daily-planner',
     live: 'https://castarke.github.io/daily-planner/',
