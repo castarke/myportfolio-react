@@ -16,7 +16,10 @@
     "web-vitals": "^2.1.4"
   },
   "homepage": "https://castarke.github.io/myportfolio-react",
+<<<<<<< HEAD
 
+=======
+>>>>>>> parent of 0d67023 (Updates)
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
