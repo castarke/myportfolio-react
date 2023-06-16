@@ -31,7 +31,7 @@ function Resume() {
       </ListGroup>
       <div style={{marginBottom: '55px' }}>
         {/* creating a downloadable link for my resume */}
-        <a href='/assets/Candler Starke Resume.pdf' className='resume' style={{ display: 'block', textAlign: 'center' }} download>
+        <a href='/assets/Candler_Starke_Resume.pdf' className='resume' style={{ display: 'block', textAlign: 'center' }} download>
           Click to download resume
         </a>
       </div>

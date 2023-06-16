@@ -5,7 +5,7 @@ export default function About() {
   return (
     <div style={{ textAlign: 'center', marginTop: '25px', marginBottom: '75px' }}>
       {/* using profile pic from public folder */}
-      <img src="/assets/1570744259165.jpeg" alt="My Image" style={{ display: 'block', margin: '0 auto', borderRadius:'50%', overflow:'hidden',boxShadow: '0 0 550px rgba(255, 215, 0, 0.3)'}} />
+      <img src="/assets/profilepic.jpeg" alt="My Image" style={{ display: 'block', margin: '0 auto', borderRadius:'50%', overflow:'hidden',boxShadow: '0 0 550px rgba(255, 215, 0, 0.3)'}} />
       <h1 style={{ marginTop: '25px' }}>About Me!</h1>
       <div style={{ margin: '0 20px' }}>
         {/* breakinng up the paragraph for visual reasons */}
