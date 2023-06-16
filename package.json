@@ -16,6 +16,7 @@
     "web-vitals": "^2.1.4"
   },
   "homepage": "https://castarke.github.io/myportfolio-react",
+
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
