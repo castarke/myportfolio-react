@@ -6,7 +6,7 @@ const projects = [
   {
     id: 0,
     title: 'Note Taker',
-    image: 'assets/notetaker.png',
+    image: process.env.PUBLIC_URL+'/assets/notetaker.png',
     description: 'Add and delete notes to help keep track of your life',
     repository: 'https://github.com/castarke/Express-Note-Taker',
     live: 'https://candlers-note-taker.herokuapp.com/notes',
@@ -14,7 +14,7 @@ const projects = [
   {
     id: 1,
     title: 'CMS-Blog',
-    image: 'assets/candlerscmsblog.png',
+    image: process.env.PUBLIC_URL+'/assets/candlerscmsblog.png',
     description: 'A blog where you can share your thoughts with friends',
     repository: 'https://github.com/castarke/CMS-Blog',
     live: 'https://candlerscmsblog.herokuapp.com/',
@@ -22,7 +22,7 @@ const projects = [
   {
     id: 2,
     title: 'The Shelve',
-    image: 'assets/TheShelve.png',
+    image: process.env.PUBLIC_URL+'/assets/TheShelve.png',
     description: 'A work in progress to create your personal movie database',
     repository: 'https://github.com/castarke/TheShelve',
     live: 'https://theshelve.herokuapp.com/login',
@@ -30,7 +30,7 @@ const projects = [
   {
     id: 3,
     title: 'Who, Where, Wow',
-    image: 'assets/whowherewow.png',
+    image: process.env.PUBLIC_URL+'/assets/whowherewow.png',
     description: "Where to watch your favorite actor's filmography",
     repository: 'https://github.com/castarke/movie-rec-repo',
     live: 'https://castarke.github.io/movie-rec-repo/',
@@ -38,7 +38,7 @@ const projects = [
   {
     id: 4,
     title: 'Weather Dashboard',
-    image: 'assets/weatherdashboard.png',
+    image: process.env.PUBLIC_URL+'/assets/weatherdashboard.png',
     description: 'Get your local weather forecast',
     repository: 'https://github.com/castarke/Weather-Forcast',
     live: 'https://castarke.github.io/Weather-Forcast/',
@@ -46,10 +46,18 @@ const projects = [
   {
     id: 5,
     title: 'Workday Planner',
-    image: 'assets/workdayscheduler.png',
+    image: process.env.PUBLIC_URL+'/assets/workdayscheduler.png',
     description: 'A Calendar to keep track of your daily tasks',
     repository: 'https://github.com/castarke/daily-planner',
     live: 'https://castarke.github.io/daily-planner/',
+  },
+  {
+    id: 6,
+    title: 'DonateTrader',
+    image: process.env.PUBLIC_URL+'/assets/donateTrader.png',
+    description: 'A marketplace where you can barter the things laying around your house',
+    repository: 'https://github.com/castarke/donatetrader',
+    live: 'https://donatetrader-6968094a5822.herokuapp.com/',
   },
 ];
 
