@@ -4,7 +4,7 @@ import Projects from './pages/Projects';
 
 const projects = [
   {
-    id: 0,
+    id: 6,
     title: 'DonateTrader',
     image: '/assets/donateTrader.png',
     description: 'A marketplace to barter items around your house',
