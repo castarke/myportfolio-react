@@ -51,6 +51,14 @@ const projects = [
     repository: 'https://github.com/castarke/daily-planner',
     live: 'https://castarke.github.io/daily-planner/',
   },
+  {
+    id: 6,
+    title: 'DonateTrader',
+    image: '/assets/donateTrader.png',
+    description: 'A marketplace to barter items around your house',
+    repository: 'https://github.com/castarke/donatetrader',
+    live: 'https://donatetrader-6968094a5822.herokuapp.com/',
+  },
 ];
 
 // applying the information to the project function anad rendering the projects
