@@ -54,7 +54,7 @@ const projects = [
     {
     id: 6,
     title: 'DonateTrader',
-    image: '/assets/donateTrader.png',
+    image: 'assets/donateTrader.png',
     description: 'A marketplace to barter items around your house',
     repository: 'https://github.com/castarke/donatetrader',
     live: 'https://donatetrader-6968094a5822.herokuapp.com/',
